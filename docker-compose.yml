@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  api:
+    # Constrói a imagem a partir do Dockerfile na pasta atual
+    build: .
+    container_name: ellis_api
+    # Mapeia a porta 8000 do contêiner para a porta 8000 da sua máquina
+    ports:
+      - "8000:8000"
